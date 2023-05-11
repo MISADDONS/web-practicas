@@ -1,0 +1,50 @@
+:root{
+    --oscuro:#07070A;
+    --azulOscuro:#0A1128;
+    --azulClaro:#006FE6;
+    --blanco:#FEFCFB;
+    --titulos: 'Baloo 2', cursive;
+    --parrafos: 'Monserrat', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1,6rem;
+}
+/* para que un contenedor tenga la misma altura cuando se añade padding 
+es los siguiente
+body{
+    box-sizing: border-box;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;*/ 
+html{
+    box-sizing: border-box;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+/*Estilos globales*/
+h1,h2, h3 {
+    font-family: var(--titulos);
+}
+
+p, a{
+    font-family: var(--parrafos);
+}
+
+
+
+html{
+    box-sizing: border-box;
+}
+
+*,*::before *::after{
+    box-sizing: inherit;
+}
