@@ -37,14 +37,72 @@ h1,h2, h3 {
 
 p, a{
     font-family: var(--parrafos);
+   
 }
 
 
 
 html{
     box-sizing: border-box;
+    font-size 62,5%; /*pasa a ser la fuente de valor 10 px*/
+}
+html{
+    font-size: 1.6rem; /*quiere decir que por defecto la fuente 
+    en la pagina es de 16x*/
 }
 
 *,*::before *::after{
-    box-sizing: inherit;
+    box-sizing: inherit; /*todos los elementos cojen el valor de caja padre*/
 }
+
+/*parrafos globales*/
+h1, h2, h3{
+    font-family: var(--titulos);
+}
+p, a{
+    font-family: var(--parrafos);
+
+}
+.encabezado{
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 70rem;
+    background-size: cover;
+    background-position: center center;
+}
+.logo h2{
+    font-size: 3rem;
+}
+.logo h2 span{
+    color: var(--azulClaro);
+}
+.ocultar¨{
+    display: none;
+}
+.contenido-navegacion {
+    display: flex; /*espara alinear*/
+    align-items: center; /*alinea de arriba abajo*/
+    justify-content: space-around;
+    background-color: var(--blanco);
+    box-shadow: 10px 10px 16px -6px rgba(0,0,0,0.45);
+}
+
+.hamburguesa span{
+    width: 5rem;
+    height: 1rem;
+    border: 3px;
+    background-color: var(--oscuro);
+    display: block
+}
+
+
+
+
+
+
+
+
+
+
+
