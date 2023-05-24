@@ -80,6 +80,23 @@ p, a{
 .ocultar¨{
     display: none;
 }
+
+@keyframes desplazamiento{
+    /*desplazamiento inicial*/
+    0%{
+      
+            transform: translateX(-100%);
+        }
+        -100%{
+            transform: translateX(0);
+
+        }
+       
+
+    }
+
+    
+    
 .contenido-navegacion {
     display: flex; /*espara alinear*/
     align-items: center; /*alinea de arriba abajo*/
@@ -87,6 +104,23 @@ p, a{
     background-color: var(--blanco);
     box-shadow: 10px 10px 16px -6px rgba(0,0,0,0.45);
 }
+
+.navegacion{
+    background-color: var(--blanco);
+    position: absolute;
+    left: 0;
+    top: 140px;
+    width: 100;
+    animation: desplazamiento .5s ease-in-out;
+}
+.navegacion a{
+    display: block;
+    font-size: 2rem;
+    padding: 1.1rem;
+    color: var(--oscuro);
+    text-decoration: none;
+}
+
 
 .hamburguesa span{
     width: 5rem;
