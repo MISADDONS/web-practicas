@@ -70,6 +70,19 @@ p, a{
     min-height: 70rem;
     background-size: cover;
     background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+
+.encabezado::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index -1;
 }
 .logo h2{
     font-size: 3rem;
@@ -77,9 +90,30 @@ p, a{
 .logo h2 span{
     color: var(--azulClaro);
 }
-.ocultar¨{
+.ocultar{
     display: none;
 }
+
+.contenedor{
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 90%;
+}
+
+.btn {
+    padding: 1rem 3rem;
+    font-weight: bold;
+    font-family: var(--parrafos);
+    font-size: 2rem;
+    border: none;
+    color: var(--blanco)
+}
+
+.azul{
+    background-color: var(--azulClaro);
+}
+
+
 
 @keyframes desplazamiento{
     /*desplazamiento inicial*/
@@ -87,7 +121,7 @@ p, a{
       
             transform: translateX(-100%);
         }
-        -100%{
+        100%{
             transform: translateX(0);
 
         }
@@ -105,6 +139,12 @@ p, a{
     box-shadow: 10px 10px 16px -6px rgba(0,0,0,0.45);
 }
 
+@media(min-width: 768px) {
+    .ocultar{
+        display: inline;
+    } 
+}
+
 .navegacion{
     background-color: var(--blanco);
     position: absolute;
@@ -113,12 +153,34 @@ p, a{
     width: 100;
     animation: desplazamiento .5s ease-in-out;
 }
+@media(min-width: 768px) {
+    .ocultar{
+        display: inline;
+    } 
+}
 .navegacion a{
     display: block;
     font-size: 2rem;
     padding: 1.1rem;
     color: var(--oscuro);
     text-decoration: none;
+    transition: background-color 3s ease-in-out;
+}
+
+@media(min-width: 768px) {
+    .navegacion a{
+        display: inline;
+    } 
+}
+
+@media(min-width: 768px) {
+    .navegacion{
+        position: relative;
+        top: unset;
+        width: auto;
+        background: unset;
+        animation: unset;
+    } 
 }
 
 
@@ -129,6 +191,39 @@ p, a{
     background-color: var(--oscuro);
     display: block
 }
+
+
+@media(min-width: 768px) {
+    .hamburguesa{
+        display: none;
+    } 
+}
+
+/*contenido del encabezado*/
+
+.texto-encabezado h1{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--blanco);
+    padding-top: 8rem;
+}
+  
+.formulario-encabezado {
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+}
+
+.formulario-encabezado h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0;
+
+
+}
+
 
 
 
