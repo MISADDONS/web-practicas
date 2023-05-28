@@ -127,6 +127,7 @@ p, a{
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     z-index -1;
+}
 
 C
 
@@ -220,8 +221,6 @@ flex: 0 0 calc(50% - 1rem);
     text-align: center;
     color: var(--blanco);
     padding-top: 8rem;
-
-
 }
 
 @media(mix-widght: 768px){
