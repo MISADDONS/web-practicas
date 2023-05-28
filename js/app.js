@@ -12,12 +12,28 @@ document.addEventListener('DOMContentLoaded',()=>{
  function mostrarMenu(){
     hamburguesa.addEventListener('click',()=>{
         navegacion.classList.toggle('ocultar');
+    });
 
-        /*if (navegacion.classList.constains('ocultar')){
+}
+       
+/*if (navegacion.classList.constains('ocultar')){
             navegacion.classList.remove('ocultar');
         }else}
         navegacion.classList.add('ocultar')
         }*/
 });
+}
+
+function cerrarMenu(){
+}
+    enlaces.forEach(enlace) =>{
+        enlaces.addEventListener('click',(e)=>{
+            if(e.target.tagName --- "A"){
+                navegacion.classList.add('ocultar');
+            }                           
+
+        });
+    }
+
 }
 
