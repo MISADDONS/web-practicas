@@ -3,6 +3,7 @@ const navegacion = document.querySelector('.navegacion');
 const enlaces = document.querySelectorAll(".navegacion a");
 
 
+
 document.addEventListener('DOMContentLoaded',()=>{
     mostrarMenu();
     cerrarMenu();
@@ -21,19 +22,19 @@ document.addEventListener('DOMContentLoaded',()=>{
         }else}
         navegacion.classList.add('ocultar')
         }*/
-});
-}
+
 
 function cerrarMenu(){
-}
     enlaces.forEach(enlace) =>{
-        enlaces.addEventListener('click',(e)=>{
-            if(e.target.tagName --- "A"){
-                navegacion.classList.add('ocultar');
-            }                           
+        enlace.addEventListener('click',(e)=>{
+            console.log(e.target.tagName);
 
         });
-    }
-
+    });
 }
+
+    
+
+    
+
 

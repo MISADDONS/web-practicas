@@ -56,7 +56,7 @@ html{
     box-sizing: inherit; /*todos los elementos cojen el valor de caja padre*/
 }
 
-/*parrafos globales*/
+/* estilos globales*/
 h1, h2, h3{
     font-family: var(--titulos);
 }
@@ -74,7 +74,10 @@ p, a{
     max-width: 120rem;
     width: 95%;
 }
-
+.P{
+    color: var(--titulos);
+    font-family: var(--titulos);
+}
 .btn {
     padding: 1rem 3rem;
     font-weight: bold;
@@ -82,6 +85,10 @@ p, a{
     font-size: 2rem;
     border: none;
     color: var(--blanco)
+}
+
+.btn:hover{
+    cursor: pointer
 }
 
 .azul{
@@ -140,11 +147,11 @@ p, a{
     box-shadow: 10px 10px 16px -6px rgba(0,0,0,0.45);
 }
 
-.navegacion{
+.navegacion ocultar{
     background-color: var(--blanco);
     position: absolute;
     left: 0;
-    top: 140px;
+    top: 70px;
     width: 100;
     animation: desplazamiento .5s ease-in-out;
 }
@@ -254,6 +261,7 @@ flex: 0 0 calc(50% - 1rem);
     border-radius: .5rem;
     font-family: var(--parrafos);
     outline: none;
+}
 
 
 
