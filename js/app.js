@@ -1,7 +1,7 @@
 const hamburguesa = document.querySelector('.hamburguesa');
 const navegacion = document.querySelector('.navegacion');
 const enlaces = document.querySelectorAll(".navegacion a");
-
+console.log(enlaces);
 
 
 document.addEventListener('DOMContentLoaded',()=>{
@@ -25,13 +25,15 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 
 function cerrarMenu(){
-    enlaces.forEach(enlace) =>{
+    enlaces.forEach(enlace=>{
         enlace.addEventListener('click',(e)=>{
             console.log(e.target.tagName);
 
         });
     });
 }
+
+
 
     
 

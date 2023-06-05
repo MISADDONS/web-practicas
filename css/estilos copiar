@@ -115,7 +115,7 @@ p, a{
     background-size: cover;
     background-position: center center;
     position: relative;
-    z-index: 1;
+    z-index: 1; /*capa por encima del indez -1*/  
 }
 
 .encabezado::before{
@@ -126,21 +126,21 @@ p, a{
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
-    z-index -1;
+    z-index: -1; /*capa debajo del z-index 1*/
 }
 
 C
 
 .logo h2 span{
-    color: var(--azulClaro);
+    color: var(--azulClaro); /* crea de color el items*/
 }
 
 .contenido-navegacion {
     display: flex; /*espara alinear*/
     align-items: center; /*alinea de arriba abajo*/
-    justify-content: space-around;
-    background-color: var(--blanco);
-    box-shadow: 10px 10px 16px -6px rgba(0,0,0,0.45);
+    justify-content: space-around; /*espacio igual a todas partes*/
+    background-color: var(--blanco); /*crea el fondo blanco*/
+    box-shadow: 10px 10px 16px -6px rgba(0,0,0,0.45); /*le da sombra */
 }
 
 .navegacion{
