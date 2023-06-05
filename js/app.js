@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 function cerrarMenu(){
     enlaces.forEach(enlace=>{
         enlace.addEventListener('click',(e)=>{
-            console.log(e.target.tagName);
+           
 
         });
     });
